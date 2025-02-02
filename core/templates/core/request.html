@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+<div class="container mt-5"></div>
+    <h3>Gestion des Demandes de Casier Judiciaire</h3>
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nom de l’utilisateur</th>
+                <th>Date de la demande</th>
+                <th>Statut</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example row -->
+            <tr>
+                <td>John Doe</td>
+                <td>2023-10-01</td>
+                <td><span class="badge badge-warning">🟡 En attente</span></td>
+                <td>
+                    <button class="btn btn-info btn-sm">Voir détails</button>
+                    <button class="btn btn-success btn-sm">Valider</button>
+                    <button class="btn btn-danger btn-sm">Refuser</button>
+                </td>
+            </tr>
+            <!-- Repeat rows as needed -->
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
